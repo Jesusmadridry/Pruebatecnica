@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="custom.js"></script>
+  <title>DETAILS</title>
+
+<body>
+  
+  <button type="button" class="btn btn-dark btn-lg" style="margin-left:8% !important; margin-top:3% !important" id="back_details">BACK</button>
+  <div class="title-container"><h1>TICKET DETAILS</h1></div>
+  <div class="container">
+    <form>
+        <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Comments</label>
+            <textarea type="text" class="form-control" id="ticket_comments"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Status</label>
+            <select class="custom-select my-1 mr-sm-2" id="ticket_status">
+                <option value="Active">Active</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Closed">Closed</option>
+            </select>
+        </div>
+      <button type="button" class="btn btn-primary btn-lg btn-block" id="editTicket">Editar</button>
+    </form>
+  </div>
+</body>
+
+<style>
+  .title-container {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    margin-left: -8%;
+  }
+  .container {
+    margin-top: 5%;
+    margin-left: 31%;
+    border-radius: 3px;
+    border: 1px solid #cccc;
+    padding: 30px;
+    width: 600px;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+</style>
+
+
+</html>
